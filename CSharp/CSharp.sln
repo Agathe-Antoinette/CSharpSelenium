@@ -5,6 +5,15 @@ VisualStudioVersion = 15.0.26228.12
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Exercise1", "Exercise1\Exercise1.csproj", "{8FCBBC67-34FA-4C7F-8AB6-34478326034C}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HelloSoftUni", "HelloSoftUni\HelloSoftUni.csproj", "{118CD9FC-6D78-4CC2-8D6A-A425385CB58D}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Nums1to20", "Nums1to20\Nums1to20.csproj", "{90B417C9-A679-43C2-97BB-91B48E1E0614}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Problems", "Problems", "{DFFDB355-F41D-47EA-A065-C967655A082E}"
+	ProjectSection(SolutionItems) = preProject
+		..\..\..\Users\petko\Downloads\1. First-Steps-in-Coding-Exercises.docx = ..\..\..\Users\petko\Downloads\1. First-Steps-in-Coding-Exercises.docx
+	EndProjectSection
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -15,6 +24,14 @@ Global
 		{8FCBBC67-34FA-4C7F-8AB6-34478326034C}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{8FCBBC67-34FA-4C7F-8AB6-34478326034C}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{8FCBBC67-34FA-4C7F-8AB6-34478326034C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{118CD9FC-6D78-4CC2-8D6A-A425385CB58D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{118CD9FC-6D78-4CC2-8D6A-A425385CB58D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{118CD9FC-6D78-4CC2-8D6A-A425385CB58D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{118CD9FC-6D78-4CC2-8D6A-A425385CB58D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{90B417C9-A679-43C2-97BB-91B48E1E0614}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{90B417C9-A679-43C2-97BB-91B48E1E0614}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{90B417C9-A679-43C2-97BB-91B48E1E0614}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{90B417C9-A679-43C2-97BB-91B48E1E0614}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
