@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace HelloSoftUni
 {
-    class HelloSoftUni
+    class HelloSoftUniStart
     {
         static void Main(string[] args)
         {
