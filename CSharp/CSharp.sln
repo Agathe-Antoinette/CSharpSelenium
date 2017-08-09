@@ -1,7 +1,7 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 15
-VisualStudioVersion = 15.0.26228.12
+VisualStudioVersion = 15.0.26430.16
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Exercise1", "Exercise1\Exercise1.csproj", "{8FCBBC67-34FA-4C7F-8AB6-34478326034C}"
 EndProject
@@ -17,6 +17,8 @@ EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Expression", "Expression\Expression.csproj", "{016E61E3-4514-492F-B705-F725D92FBDD7}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Loops", "Loops\Loops.csproj", "{49B83D3E-3FAD-4B50-9A58-4D5EEF472CE5}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LINQ", "LINQ\LINQ.csproj", "{CFF9C44D-DEF6-40E0-BF17-6E87239E1775}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -44,6 +46,10 @@ Global
 		{49B83D3E-3FAD-4B50-9A58-4D5EEF472CE5}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{49B83D3E-3FAD-4B50-9A58-4D5EEF472CE5}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{49B83D3E-3FAD-4B50-9A58-4D5EEF472CE5}.Release|Any CPU.Build.0 = Release|Any CPU
+		{CFF9C44D-DEF6-40E0-BF17-6E87239E1775}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{CFF9C44D-DEF6-40E0-BF17-6E87239E1775}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{CFF9C44D-DEF6-40E0-BF17-6E87239E1775}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{CFF9C44D-DEF6-40E0-BF17-6E87239E1775}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

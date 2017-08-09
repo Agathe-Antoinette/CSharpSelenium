@@ -31,6 +31,8 @@ namespace Exercise1
             //    Console.WriteLine(true);
             //}
 
+            var str = isEqual ? "yes" : "no";
+
             decimal result = CalculateArea(money, moneyTwo);
 
             Console.WriteLine(result);
