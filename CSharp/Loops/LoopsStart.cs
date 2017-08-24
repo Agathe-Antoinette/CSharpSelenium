@@ -25,9 +25,6 @@ namespace Loops
             ForEachLoop.Execute(list);
             ForEachLoop.Execute(dict.Keys);
             ForEachLoop.Execute(dict.Values);
-
-            //TODO: Print all cities from dictionary.
-            //TODO: Task 4&5
         }
     }
 }

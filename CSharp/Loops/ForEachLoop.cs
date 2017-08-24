@@ -16,5 +16,14 @@ namespace Loops
                 Console.WriteLine(item);
             }
         }
+
+        public static void Execute(IEnumerable<string> list)
+        {
+            Console.WriteLine("ForEach Loop is executing!");
+            foreach (var item in list)
+            {
+                Console.WriteLine(item);
+            }
+        }
     }
 }

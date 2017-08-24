@@ -10,7 +10,6 @@ namespace RectangleArea
     {
         static void Main(string[] args)
         {
-            //TODO: Check this homework.
             Console.WriteLine("Please, write the value of the side a of a rectangle.");
             var a = double.Parse(Console.ReadLine());
             Console.WriteLine("Please, write the value of the side b of a rectangle.");

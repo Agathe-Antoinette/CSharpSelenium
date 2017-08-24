@@ -75,7 +75,7 @@ namespace LINQ
 
             //TODO: Problem from slide 22
 
-            var makeUpWithPriceAbove = makeUpBag.FirstOrDefault(mu => mu.Price > 100);
+            var makeUpWithPriceAbove = makeUpBag.FirstOrDefault(mu => mu.Price < 100);
             Console.WriteLine(makeUpWithPriceAbove.Price);
         }
     }
