@@ -28,6 +28,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RectangleArea", "RectangleA
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DataConnectivity", "DataConnectivity\DataConnectivity.csproj", "{DC731834-42D2-4C92-8235-09107076C801}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "OttomanArmyBooks", "OttomanArmyBooks\OttomanArmyBooks.csproj", "{7D40AD1A-40FA-4FBD-83A4-FC854A6914BE}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -70,6 +72,10 @@ Global
 		{DC731834-42D2-4C92-8235-09107076C801}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{DC731834-42D2-4C92-8235-09107076C801}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{DC731834-42D2-4C92-8235-09107076C801}.Release|Any CPU.Build.0 = Release|Any CPU
+		{7D40AD1A-40FA-4FBD-83A4-FC854A6914BE}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{7D40AD1A-40FA-4FBD-83A4-FC854A6914BE}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{7D40AD1A-40FA-4FBD-83A4-FC854A6914BE}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{7D40AD1A-40FA-4FBD-83A4-FC854A6914BE}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

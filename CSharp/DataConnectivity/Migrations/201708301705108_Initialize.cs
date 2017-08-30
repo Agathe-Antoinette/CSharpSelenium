@@ -3,7 +3,7 @@ namespace DataConnectivity.Migrations
     using System;
     using System.Data.Entity.Migrations;
     
-    public partial class Init : DbMigration
+    public partial class Initialize : DbMigration
     {
         public override void Up()
         {
@@ -18,7 +18,7 @@ namespace DataConnectivity.Migrations
                 .PrimaryKey(t => t.Id);
             
             CreateTable(
-                "dbo.MakeUpItems",
+                "dbo.MakeUps",
                 c => new
                     {
                         Id = c.Int(nullable: false, identity: true),
@@ -35,9 +35,9 @@ namespace DataConnectivity.Migrations
         
         public override void Down()
         {
-            DropForeignKey("dbo.MakeUpItems", "BagId", "dbo.Bags");
-            DropIndex("dbo.MakeUpItems", new[] { "BagId" });
-            DropTable("dbo.MakeUpItems");
+            DropForeignKey("dbo.MakeUps", "BagId", "dbo.Bags");
+            DropIndex("dbo.MakeUps", new[] { "BagId" });
+            DropTable("dbo.MakeUps");
             DropTable("dbo.Bags");
         }
     }
