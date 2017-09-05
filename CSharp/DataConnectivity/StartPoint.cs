@@ -12,7 +12,7 @@ namespace DataConnectivity
         static void Main(string[] args)
         {
             UsingDatabase();
-
+            Console.WriteLine();
             UsingDapper();
         }
 
