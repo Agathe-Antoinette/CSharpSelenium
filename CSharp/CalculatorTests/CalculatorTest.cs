@@ -13,7 +13,6 @@ namespace CalculatorTests
     public class CalculatorTest
     {
         private CalculatorClient calculator;
-
         private string dataSourcePath = ConfigurationManager.AppSettings["DataSourcePath"];
         private string connectionString = "Provider=Microsoft.ACE.OLEDB.12.0;Data Source={0};Extended Properties=\"Excel 12.0 Xml;HDR=Yes;IMEX=1;\"";
 
@@ -47,26 +46,39 @@ namespace CalculatorTests
 
                 foreach (var data in substractData)
                 {
-                var result = calculator.Substract(data.A, data.B);
-                Assert.AreEqual(data.Expected, result);
+                    var result = calculator.Substract(data.A, data.B);
+                    Assert.AreEqual(data.Expected, result);
                 }
             }
-
-
         }
-        ///TODO: next 2 tests
-        [TestMethod]
-        public void TestMultiply()
-        {
-            var result = calculator.Multiply(7m, 8m);
-            Assert.AreEqual(56m, result);
-        }
+
 
         [TestMethod]
         public void TestDivide()
         {
-            var result = calculator.Divide(56m, 8m);
-            Assert.AreEqual(7m, result);
+            using (var connection = new OleDbConnection(string.Format(connectionString, dataSourcePath)))
+            {
+                var divideData = connection.Query<RowData>("select * from [Divide$]");
+                foreach (var data in divideData)
+                {
+                    var result = calculator.Divide(data.A, data.B);
+                    Assert.AreEqual(Math.Round(data.Expected, 2), Math.Round(result, 2));
+                }
+            }
+        }
+
+        [TestMethod]
+        public void TestMultiply()
+        {
+            using (var connection = new OleDbConnection(string.Format(connectionString, dataSourcePath)))
+            {
+                var multiplyData = connection.Query<RowData>("select * from [Multiply$]");
+                foreach (var data in multiplyData)
+                {
+                    var result = calculator.Multiply(data.A, data.B);
+                    Assert.AreEqual(data.Expected, result);
+                }
+            }
         }
     }
 }
