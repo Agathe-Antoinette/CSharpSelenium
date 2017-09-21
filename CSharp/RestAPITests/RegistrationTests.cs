@@ -5,34 +5,33 @@ using System.Net.Http.Headers;
 using RestAPITests.Models;
 using System.Reflection;
 using Newtonsoft.Json;
+using System.Net;
 
 namespace RestAPITests
 {
     [TestClass]
     public class RegistrationTests
     {
-        private HttpClient client = new HttpClient();
+        private const string Uri = "/api/account/register";
 
         [TestMethod]
         public void RegisterNewUserShouldProccessCorrectly()
         {
-            var registerUri = "http://spots.kostov.net/api/account/register";
-            this.SetupClient(registerUri);
-
             var dataReader = new DataReader<RegistrationUser>();
             var registrationUser = dataReader.GetData(MethodBase.GetCurrentMethod().Name);
             registrationUser.Email = string.Format(registrationUser.Email,Guid.NewGuid());
-            var registrationUserJson = JsonConvert.SerializeObject(registrationUser);
-            var response = this.client.PostAsJsonAsync(registerUri, registrationUserJson).Result;
 
+            var service = new Service();
+            var response = service.PostAsync(Uri, registrationUser).Result;
+            string result = response.Content.ReadAsStringAsync().Result;
 
+            Assert.IsTrue(response.IsSuccessStatusCode);
+            Assert.AreEqual(HttpStatusCode.OK, response.StatusCode);
+            Assert.AreEqual(string.Empty, result);
         }
 
-        private void SetupClient(string uri)
-        {
-            this.client.BaseAddress = new Uri(uri);
-            this.client.DefaultRequestHeaders.Accept.Clear();
-            this.client.DefaultRequestHeaders.Accept.Add(new MediaTypeWithQualityHeaderValue("application/json"));
-        }
+        // TODO: Negative Registration Tests
+
+
     }
 }
